@@ -2,64 +2,19 @@
   margin-top: 70px
   margin-bottom: 112px
   
-.images-one 
-  background: url('/images/icon-3.png')
-  background-repeat: no-repeat
-  background-position: center
-  width: 53px
-  height: 53px
-  &:hover
-    background: url('/images/icon-3-3.png')
-    background-repeat: no-repeat
-    background-position: center
-    width: 53px
-    height: 53px 
-.images-two
-  background: url('/images/icon-4.png')
-  background-repeat: no-repeat
-  background-position: center
-  width: 53px
-  height: 53px 
-  &:hover
-    background: url('/images/icon-4-4.png') 
-    background-repeat: no-repeat
-    background-position: center
-    width: 53px
-    height: 53px 
-.images-three
-  background: url('/images/icon-5.png')
-  background-repeat: no-repeat
-  background-position: center
-  width: 53px
-  height: 53px 
-  
-  &:hover
-    background: url('/images/icon-5-5.png') 
-    background-repeat: no-repeat
-    background-position: center
-    width: 53px
-    height: 53px 
-.images-four 
-  background: url('/images/icon-6.png')
-  background-repeat: no-repeat
-  background-position: center
-  width: 53px
-  height: 53px 
-  &:hover
-    background: url('/images/icon-6-6.png') 
-    background-repeat: no-repeat
-    background-position: center
-    width: 53px
-    height: 53px 
+
 .choice-items
   display: flex
   justify-content: space-between 
   align-items: start
   text-align: center 
   color: #555555 
+  
 .choice-item
   max-width: 266px 
-  height: auto 
+  height: auto
+  transition: all 0.3s 
+  
   
 .images
   margin: 0 auto
@@ -67,8 +22,7 @@
   font-size: 22px
   font-family: 'Raleway', sans-serif 
   font-weight: 
-  &:hover
-    color: #c7b299
+
   
 .header-text__small  
   font-family: 'Raleway', sans-serif  
@@ -85,6 +39,65 @@
   position: absolute
   left: 100px
   top: 100px
+  border-radius: 3px
+.choice_images
+  position: relative
+  width: 53px
+  height: 49px
+  margin: 0 auto
+  transition: all 0.3s
+  margin-bottom: 25px
+.choice_images-hidden
+  transition: all 0.3s
+  position: absolute
+  left: 0
+  top: 0
+
+  
+.chice_images-hover
+  position: absolute
+  left: 0
+  top: 0
+  opacity: 0
+  visibility: hidden
+  transition: all 0.3s
+  
+.choice-item
+  transition: all 0.3s  
+  &:hover .choice_images-hidden
+    transition: all 0.3s
+    opacity: 0
+    visibility: hidden
+.choice-item 
+  transition: all 0.3s   
+  &:hover .chice_images-hover
+    transition: all 0.3s
+    opacity: 1
+    visibility: visible
+  &:hover .header-text
+    transition: all 0.3s
+    color: #c7b299
+  &:hover.header-text__small::before
+    transition: all 0.3s
+    background-color: #c7b299
+.choice-item:hover
+  .header-text__small::before
+    transition: all 0.3s
+    background-color: #c7b299
+
+
+
+      
+
+
+    
+.choice_images-problem
+  width: 44px    
+      
+  
+
+
+
 
   
 

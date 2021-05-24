@@ -1,0 +1,121 @@
+.intro
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: 100%
+  height: 100vh
+  position: relative
+.intro_img
+  img
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100vh
+  &::after
+    content: ''
+    display: block
+    width: 100%
+    height: 100vh
+    position: absolute
+    top: 0
+    left: 0
+    background: transparent
+    background-color: rgba(17,17,17, 0.7)
+    
+.intro_info
+  position: relative
+  z-index: 1    
+  margin: 0 auto  
+  text-align: center
+  color: #ffffff
+.top_title 
+  font-size: 36px
+  font-weight: 500
+.intro_title
+  font-size: 52px
+  font-weight: 800
+
+.intro_suptitle
+  font-size: 16px
+  font-weight: 300
+  font-family: 'Montserrat', sans-serif  
+  line-height: 24px
+  max-width: 562px
+.intro_btn
+  margin-top: 52px
+.intro_slider
+  position: relative 
+  .slick-arrow
+    position: absolute
+    top: 45%
+    font-size: 0
+    z-index: 10
+  .slick-prev
+    left: 5%
+    width: 40px
+    height: 73px
+    background: url('../images/left-arrow.svg')  left no-repeat 
+    border: none
+    cursor: pointer
+    transition: 0.3s
+    &:hover      
+      opacity: 0.5
+  .slick-next
+    right: 5%
+    width: 40px
+    height: 73px
+    background: url('../images/right-arrow.svg')  right no-repeat 
+    border: none
+    cursor: pointer
+    transition: 0.3s
+    &:hover      
+      opacity: 0.5  
+.intro_slider
+  .slick-dots  
+    position: absolute
+    display: flex
+    justify-content: center
+    align-items: center 
+    top: 95% 
+    right: 48%  
+    
+    list-style: none
+    font-size: 0
+    
+
+    button
+      padding: 0
+      border: none      
+      width: 11px
+      height: 11px
+      background-color: #939191      
+      opacity: 0.5
+      border-radius: 50%      
+      cursor: pointer
+      transition: all 0.2s
+      margin: 0 0 0 9px
+      &:hover
+        border: 2px solid #d3c1ad 
+        background-color: transparent
+    .slick-active
+      button
+        width: 15px
+        height: 15px
+        border: 2px solid #d3c1ad        
+        border-radius: 50%
+        background-color: transparent
+
+        
+    
+
+
+.slick-list  
+  overflow: hidden
+  
+.slick-track 
+  display: flex
+  align-items: flex-start
+
+
+

@@ -17,29 +17,47 @@
   height: 482px
   margin-top: 40px
   justify-content: center
+  
+  left: -20px
 .web-center
-  z-index: 5
+  z-index: 1
   position: absolute   
   left: 238px  
   width: 770px
   height: 482px
   bottom: 0
+  transition: all 0.3s
+  &:hover
+    transform: scale(1.05)
+    margin-bottom: 11px
 .web-left
   left: 0
   bottom: 0
   width: 770px
   height: 400px
-  
+  transition: all 0.3s  
   position: absolute  
+  &:hover
+    transform: scale(1.2)
+    margin-bottom: 40px
+    z-index: 2
+    margin-left: -55px
 .web-right
   left: 460px
   bottom: 0
   position: absolute
   width: 770px
   height: 400px
+  transition: all 0.3s
+  &:hover
+    transform: scale(1.2)
+    margin-bottom: 40px
+    margin-left: 55px
+    z-index: 2
 .section-ideas
   background-color: #FBFAF8  
   padding-top: 84px
+
 
   
 
